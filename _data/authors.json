@@ -1,0 +1,62 @@
+{
+  "tshiran": {
+    "name": "Tomer Shiran",
+    "title": "Founder, PMC Member and Committer",
+    "org": "Apache Drill",
+    "email": "tshiran@apache.org"
+  },
+  "jnadeau": {
+    "name": "Jacques Nadeau",
+    "title": "PMC Chair and Committer",
+    "org": "Apache Drill",
+    "email": "jacques@apache.org"
+  },
+  "namato": {
+    "name": "Nick Amato",
+    "title": "Director, Technical Marketing",
+    "org": "MapR Technologies",
+    "email": "namato@mapr.com"
+  },
+  "akumar": {
+    "name": "Anil Kumar Batchu",
+    "title": "SSE",
+    "org": "Intuit India (IDC)",
+    "email": "akumarb2010@gmail.com"
+  },
+  "kbhallamudi": {
+    "name": "Kamesh Bhallamudi",
+    "title": "SSE",
+    "org": "Intuit India (IDC)",
+    "email": "kamesh.hadoop@gmail.com"
+  },
+  "jaltekruse": {
+    "name": "Jason Altekruse",
+    "title": "PMC Member and Committer",
+    "org": "Apache Drill",
+    "email": "json@apache.org"
+  },
+  "bbevens": {
+    "name": "Bridget Bevens",
+    "title": "Committer",
+    "org": "MapR Technologies",
+    "email": "bbevens@mapr.com"
+  },
+  "agirish": {
+    "name": "Abhishek Girish",
+    "title": "Committer",
+    "org": "MapR Technologies",
+    "email": "agirish@mapr.com"
+  },
+  "jturton": {
+    "name": "James Turton",
+    "title": "Committer",
+    "org": "Apache Software Foundation",
+    "email": "dzamo@apache.org"
+  },
+  "laurent": {
+    "name": "Laurent Goujon",
+    "title": "Committer",
+    "org": "Apache Software Foundation",
+    "email": "laurent@apache.org"
+  }
+}

@@ -1,0 +1,65 @@
+<div class="bui"></div>
+
+<div id="menu" class="mw">
+<ul>
+  <li class='toc-categories'>
+  <a class="expand-toc-icon" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="logo"><a href="{{ site.baseurl }}/"></a></li>
+  <li class='expand-menu'>
+  <a href="javascript:void(0);"><span class='menu-text'>Menu</span><span class='expand-icon'><i class="fa fa-bars"></i></span></a>
+  </li>
+  <li class="clear-float"></li>
+  <li class="nav">
+	<a>Language</a>
+	<ul>
+		{% for tongue in site.languages %}
+		<li>
+			<a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+  </li>
+  <li class="apache-link">
+    <a href="{{ site.baseurl }}/apacheASF/">Apache</a>
+  </li>
+  <li class="poweredby">
+    <a href="{{ site.baseurl }}/poweredBy">Powered By</a>
+  </li>
+  <li class="documentation-menu">
+    <a href="{{ site.baseurl }}/docs/">Documentation</a>
+    <ul>
+	  {% assign doc_data = 'docs_' | append: site.active_lang %}
+      {% for doc in site.data[doc_data].hierarchy %}
+        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li class='nav'>
+    <a href="{{ site.baseurl }}/community-resources/">Community</a>
+    <ul>
+      <li><a href="{{ site.baseurl }}/team/">Team</a></li>
+      <li><a href="{{ site.baseurl }}/mailinglists/">Mailing Lists</a></li>
+      <li><a href="{{ site.baseurl }}/community-resources/">Community Resources</a></li>
+    </ul>
+  </li>
+  <li class='nav'><a href="{{ site.baseurl }}/faq/">FAQ</a></li>
+  <li class='nav'><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+  <li class="social-menu-item"><a href="https://twitter.com/apachedrill" title="apachedrill on twitter" target="_blank"><img src="{{ site.baseurl }}/images/twitter_32_26_white.png" alt="twitter logo" align="center"></a> </li>
+  <li class="social-menu-item"><a href="https://join.slack.com/t/apache-drill/shared_invite/enQtNTQ4MjM1MDA3MzQ2LTJlYmUxMTRkMmUwYmQ2NTllYmFmMjU4MDk0NjYwZjBmYjg0MDZmOTE2ZDg0ZjBlYmI3Yjc4Y2I2NTQyNGVlZTc" title="Apache Drill Slack channels"
+      target="_blank"><img src="{{ site.baseurl }}/images/slack-logo.svg" alt="Slack logo" align="center"></a> </li>
+  <li class='search-bar'>
+    <form id="drill-search-form">
+      <input type="text" placeholder="Search Apache Drill" id="drill-search-term" />
+      <button type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </li>
+  <li class="d">
+    <a href="{{ site.baseurl }}/download/">
+      <i class="fa fa-cloud-download"></i> Download
+    </a>
+  </li>
+</ul>
+</div>

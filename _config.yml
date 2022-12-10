@@ -1,0 +1,74 @@
+title: Apache Drill - Schema-free SQL for Hadoop, NoSQL and Cloud Storage
+title_suffix: Apache Drill # This is appended to every page title on the site
+
+email: dzamo@apache.org
+permalink: pretty
+
+description: > # this means to ignore newlines until "baseurl:"
+  The official user documentation for Apache Drill.
+
+baseurl: ""
+noindex: 0 # search engine indexing enabled
+
+# Uncomment to rever to the redcarpet Markdown processor (not supported by Apache
+# Buildbot) instead of Kramdown
+# markdown: redcarpet
+# redcarpet:
+#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:slug/
+
+defaults:
+  - scope:
+      type: docs # This defines the default for anything in the docs collection. An alternative would be to use "path: _docs" here.
+    values:
+      layout: docpage
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-polyglot
+
+include:
+  - .asf.yaml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+      
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization:
+    - apidocs
+    - common
+    - contrib
+    - css
+    - _data
+    - distribution
+    - drill-yarn
+    - exec
+    - fonts
+    - images
+    - _includes
+    - js
+    - _layouts
+    - logical
+    - metastore
+    - protocol
+    - _sass
+    - _site
+    - static
+    - _tools
+    - tools
+parallel_localization: true
+lang_from_path: true
